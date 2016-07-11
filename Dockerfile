@@ -7,7 +7,7 @@ RUN wget -O consul.zip https://releases.hashicorp.com/consul/$CONSUL_VERSION/con
     unzip consul.zip -d /bin && \
     rm consul.zip && \
     wget -O consul-web-ui.zip https://releases.hashicorp.com/consul/$CONSUL_VERSION/consul_${CONSUL_VERSION}_web_ui.zip && \
-    mkdir /lib/consul/ui && \
+    mkdir -p /lib/consul/ui && \
     unzip consul-web-ui.zip -d /lib/consul/ui && \
     rm consul-web-ui.zip
 
