@@ -16,3 +16,6 @@ RUN wget -O - https://github.com/joyent/containerpilot/releases/download/$CONTAI
       tar xz -C /usr/local/bin/
 
 EXPOSE 53 53/udp 8300 8301 8301/udp 8302 8302/udp 8400 8500
+
+ARG VERSION
+ENV VERSION $VERSION
