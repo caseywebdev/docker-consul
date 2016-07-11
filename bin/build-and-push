@@ -3,5 +3,5 @@
 curl -sSL build.sey.me | \
   REF=master \
   GITHUB_REPO=caseywebdev/docker-consul \
-  IMAGE_REPO=quay.io/caseywebdev/docker-consul \
+  IMAGE_REPO=quay.io/caseywebdev/consul \
   bash
