@@ -1,0 +1,13 @@
+{
+  "consul": "consul.service.consul:8500",
+  "preStart": ["/bin/consul-manage", "preStart"],
+  "services": [
+    {
+      "name": "consul",
+      "port": 8500,
+      "health": ["/bin/consul-manage", "health"],
+      "poll": 10,
+      "ttl": 25
+    }
+  ]
+}
