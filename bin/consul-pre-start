@@ -1,3 +1,0 @@
-#!/bin/sh -e
-
-sed -i "s/CONTAINERPILOT_CONSUL_IP/$CONTAINERPILOT_CONSUL_IP/" /etc/consul.json

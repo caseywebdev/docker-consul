@@ -1,11 +1,15 @@
 {
   "consul": "{{ .CONSUL_URL }}:8500",
-  "preStart": "consul-pre-start",
+  "preStart": [
+    "sed", "-i",
+    "-e", "s/CONTAINERPILOT_CONSUL_IP/{{ .CONTAINERPILOT_CONSUL_IP }}/",
+    "-e", "s/CONSUL_URL/{{ .CONSUL_URL }}/",
+    "/etc/consul.json"
+  ],
   "services": [
     {
       "name": "consul",
       "port": 8500,
-      "health": "consul-health",
       "poll": 10,
       "ttl": 25
     }
