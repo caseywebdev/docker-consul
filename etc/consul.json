@@ -1,6 +1,5 @@
 {
   "bind_addr": "CONTAINERPILOT_CONSUL_IP",
-  "bootstrap_expect": 1,
   "client_addr": "0.0.0.0",
   "data_dir": "/var/consul/data",
   "datacenter": "dev",
