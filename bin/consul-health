@@ -1,4 +1,4 @@
-#/bin/sh -e
+#!/bin/sh -e
 
 if [ $(consul info | awk '/num_peers/{ print $3 }') == 0 ]; then
   consul join $CONSUL_URL

@@ -1,11 +1,11 @@
 {
   "consul": "consul.service.consul:8500",
-  "preStart": ["consul-pre-start"],
+  "preStart": "consul-pre-start",
   "services": [
     {
       "name": "consul",
       "port": 8500,
-      "health": ["consul-health"],
+      "health": "consul-health",
       "poll": 10,
       "ttl": 25
     }
