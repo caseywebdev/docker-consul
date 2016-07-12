@@ -16,8 +16,8 @@ ENV CONTAINERPILOT_VERSION 2.3.0
 RUN wget -O - https://github.com/joyent/containerpilot/releases/download/$CONTAINERPILOT_VERSION/containerpilot-$CONTAINERPILOT_VERSION.tar.gz | \
       tar xz -C /bin/
 
-COPY bin/consul-health-check /bin/
-COPY bin/consul-init /bin/
+COPY bin/consul-health /bin/
+COPY bin/consul-pre-start /bin/
 COPY etc/consul.json /etc/
 COPY etc/containerpilot.json /etc/
 
