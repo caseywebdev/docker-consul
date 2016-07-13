@@ -1,6 +1,6 @@
 FROM alpine:3.4
 
-RUN apk --update --no-cache add bash openssl
+RUN apk --update --no-cache add bash openssl ca-certificates
 
 ENV CONSUL_VERSION 0.6.4
 RUN wget -O consul.zip https://releases.hashicorp.com/consul/$CONSUL_VERSION/consul_${CONSUL_VERSION}_linux_amd64.zip && \
