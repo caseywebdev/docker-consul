@@ -4,6 +4,7 @@
   "client_addr": "0.0.0.0",
   "data_dir": "/var/consul/data",
   "datacenter": "dev",
+  "leave_on_terminate": true,
   "ports": {"dns": 53},
   "recursors": ["8.8.4.4", "8.8.8.8"],
   "server": true,
