@@ -11,8 +11,7 @@
       "name": "consul",
       "port": 8500,
       "poll": 10,
-      "ttl": 25,
-      "tags": ["http"]
+      "ttl": 25
     }
   ]
 }
