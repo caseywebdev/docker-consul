@@ -8,7 +8,7 @@
   ],
   "services": [
     {
-      "name": "consul",
+      "name": "consul-http",
       "port": 8500,
       "poll": 10,
       "ttl": 25
