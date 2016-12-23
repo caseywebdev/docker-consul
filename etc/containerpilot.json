@@ -11,7 +11,8 @@
       "name": "consul-http",
       "port": 8500,
       "poll": 10,
-      "ttl": 25
+      "ttl": 30,
+      "consul": {"deregisterCriticalServiceAfter": "90m"}
     }
   ]
 }
